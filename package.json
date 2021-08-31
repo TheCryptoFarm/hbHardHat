@@ -3,12 +3,29 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "chain": "cd hardhat && npx hardhat chain",
+    "fork": "cd hardhat && npx hardhat fork",
+    "node": "cd hardhat && npx hardhat chain",
+    "test": "cd hardhat && npx hardhat test",
+    "compile": "cd hardhat && npx hardhat compile",
+    "deploy": "cd hardhat && npx hardhat deploy",
+    "verify": "cd hardhat && npx hardhat verify",
+    "watch": "cd hardhat && npx hardhat watch",
+    "accounts": "cd hardhat && npx hardhat accounts",
+    "balance": "cd hardhat && npx hardhat balance",
+    "send": "cd hardhat && npx hardhat send",
+    "generate": "cd hardhat && npx hardhat generate",
+    "account": "cd hardhat && npx hardhat account",
+    "mineContractAddress": "cd hardhat && npx hardhat mineContractAddress",
+    "wallet": "cd hardhat && npx hardhat wallet",
+    "fundedwallet": "cd hardhat && npx hardhat fundedwallet",
+    "flatten": "cd hardhat && npx hardhat flatten",
+    "clean": "cd hardhat && npx hardhat clean"
+  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
