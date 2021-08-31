@@ -1,19 +1,17 @@
-async function main() {
-    const [deployer] = await ethers.getSigners();
-  
-    console.log("Deploying contracts with the account:", deployer.address);
-  
-    console.log("Account balance:", (await deployer.getBalance()).toString());
-  
-    const Token = await ethers.getContractFactory("GIMMEREWARD");
-    const token = await Token.deploy();
-  
-    console.log("Token address:", token.address);
-  }
-  
-  main()
-    .then(() => process.exit(0))
-    .catch((error) => {
-      console.error(error);
-      process.exit(1);
-    });
+/*
+
+ _______ _________ _______  _______
+(  ____ \\__   __/(  ___  )(  ____ )
+| (    \/   ) (   | (   ) || (    )|
+| (_____    | |   | |   | || (____)|
+(_____  )   | |   | |   | ||  _____)
+      ) |   | |   | |   | || (
+/\____) |   | |   | (___) || )
+\_______)   )_(   (_______)|/
+
+This deploy script is no longer in use, but is left for reference purposes!
+
+scaffold-eth now uses hardhat-deploy to manage deployments, see the /deploy folder
+And learn more here: https://www.npmjs.com/package/hardhat-deploy
+
+*/
